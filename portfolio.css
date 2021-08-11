@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background:  gradient(linear, left top, right top, 
+                color-stop(65%, #101820ff), color-stop(60%, #f2aa4cff));
+    background: linear-gradient(90deg, #101820ff 65%, #f2aa4cff 60%);
+  }
+  
+  .container nav {
+    height: 80px;
+    overflow: hidden;
+    display:  box;
+    display:  flexbox;
+    display: flex;
+     box-align: center;
+    align-items: center;
+  }
+  
+  
+  .container nav #check {
+    display: none;
+  }
+  
+  .container nav #check:checked ~ ul {
+    top: 0;
+     transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  
+  .container nav .fas {
+     box-ordinal-group: 2;
+            order: 1;
+    margin-right: 15px;
+    display: none;
+  }
+  
+  .container nav .fas {
+    width: 40px;
+    height: 5px;
+    color: #fff;
+    font-size: 30px;
+  }
+  
+  .container nav ul {
+    display:  box;
+    display:  flexbox;
+    display: flex;
+     box-flex: 1;
+         flex: 1;
+           
+  }
+  
+  .container nav ul li {
+    list-style: none;
+    margin-left: 30px;
+  }
+  
+  .container nav ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .container nav ul li a:hover{
+    color:#d35100;
+  }
+  .container .about {
+    width: 100%;
+    display:  box;
+    display:  flexbox;
+    display: flex;
+  }
+  
+  .container .about .description {
+    width: 50%;
+    padding: 100px 0px 0px 100px;
+  }
+  
+  .container .about .description h3 {
+    color: #fff;
+    font-size: 50px;
+    font-family: cursive;
+    letter-spacing: 5px;
+  }
+  
+  .container .about .description p {
+    color: #999;
+    width: 40%;
+    font-family: monospace;
+    margin: 5px 0px 40px 0px;
+  }
+  
+  .container .about .description .message-me {
+    text-decoration: none;
+    background-color: #f2aa4cff;
+    padding: 10px 15px;
+    color: #fff;
+  }
+  
+  .container .about .description .message-me:hover {
+    background-color: #bd5505;
+  }
+  
+  .container .about .image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 890px) {
+    .container {
+      overflow: auto;
+      background: gradient(linear, left top, left bottom,
+                  color-stop(80%, #101820ff), color-stop(80%, #f2aa4cff));
+      background: linear-gradient(180deg, #101820ff 80%, #f2aa4cff 80%);
+    }
+    .container nav  .fas {
+      display: block;
+       box-ordinal-group: 1;
+              order: 0;
+    }
+    .container nav ul {
+       box-orient: horizontal;
+       box-direction: normal;
+           flex-direction: row;
+              flex-direction: row;
+      position: fixed;
+    left: 60px;
+      padding-top: 20px;
+      background-color: #363636;
+      padding: 20px 20px 0px 0px;
+      height: 10vh;
+      width:80vw;
+      top: -100%;
+    }
+    .container nav ul li {
+      margin-bottom: 15px;
+  
+    }
+    .container .about {
+      box-orient: vertical;
+      box-direction: normal;
+          flex-direction: column;
+              flex-direction: column;
+    }
+    .container .about .description {
+      width: 100%;
+      padding: 10px 0px 10px 10px;
+    }
+    .container .about .image {
+      width: 100%;
+      display: box;
+      display: flexbox;
+      display: flex;
+       box-pack: center;
+              justify-content: center;
+      margin-top: 30px;
+    }
+    .container .about .image img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 890px) and (min-width: 600px) {
+    .container .about .description {
+      padding-left: 100px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      background:  gradient(linear, left top, left bottom,
+                  color-stop(75%, #101820ff), color-stop(75%, #f2aa4cff));
+      background: linear-gradient(180deg, #101820ff 75%, #f07900 75%);
+    }
+    .container nav .logo {
+      margin-left: 30px;
+    }
+    .container .about .image img {
+      width: 200px;
+      height: 200px;
+    }
+  }
